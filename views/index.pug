@@ -1,0 +1,39 @@
+extends ./layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container-fluid
+      a.navbar-brand(href='#') Amore Doni
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navContent' aria-controls='navContent' aria-expanded='false')
+        span.navbar-toggler-icon
+      #navContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.mb-2.mb-lg-0
+        form.d-flex
+          ul.navbar-nav.mr-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#contacto') Contacto
+  .container
+    #carouselControls.carousel.slide(data-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+          .matchParent
+            .row.align-items-start(style="height: 100%;")
+              .col.center
+                h1 Amore Doni
+                p Haz tu pedido por WhatsApp al 8127478168 o por mensaje directo.📲
+              .col(style="height: 100%;")
+                img.matchParent(src='site-logo-full.jpg' alt='image-not-found')
+        .carousel-item
+          img.matchParent(src='slider-pasteles-1.jpg' alt='image-not-found')
+        .carousel-item
+          img.matchParent(src='slider-pasteles-2.jpg' alt='image-not-found')
+      a.carousel-control-prev(href='#carouselControls' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Anterior
+      a.carousel-control-next(href='#carouselControls' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Siguiente
+
+  .full-heigth
+  .full-heigth
+  .full-heigth

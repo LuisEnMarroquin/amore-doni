@@ -1,0 +1,24 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install project dependencies
+      run: yarn install --production --ignore-optional --pure-lockfile --non-interactive
+    - name: Copy CNAME to public folder
+      run: cp CNAME public/CNAME
+    - name: Compile pug to html
+      run: node compile.js
+    - name: Deploy with github-pages
+      uses: JamesIves/github-pages-deploy-action@3.5.7
+      with:
+        GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO }}
+        BRANCH: gh-pages
+        FOLDER: public

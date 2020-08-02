@@ -1,0 +1,41 @@
+@font-face {
+  font-family: MilasianCirca;
+  src: url(MilasianCircaMediumPERSONAL.ttf);
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: MilasianCirca;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.full-heigth {
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.carousel-item { height: 150px; }
+@media (min-width: 400px) and (max-width: 576px) { .carousel-item { height: 200px; } }
+@media (min-width: 577px) and (max-width: 768px) { .carousel-item { height: 250px; } }
+@media (min-width: 769px) and (max-width: 992px) { .carousel-item { height: 350px; } }
+@media (min-width: 993px) and (max-width: 1200px) { .carousel-item { height: 450px; } }
+@media (min-width: 1201px) and (max-width: 1400px) { .carousel-item { height: 550px; } }
+@media (min-width: 1401px) { .carousel-item { height: 750px; } }
+
+#carouselControls {
+  padding: 10px;
+}
+
+.matchParent {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}

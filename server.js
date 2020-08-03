@@ -13,7 +13,7 @@ app.use(stylus.middleware({
   dest: join(__dirname, 'public'),
   debug: true,
   force: true
-}));
+}))
 
 app.get('/', (req, res) => {
   res.render('index.pug', { environment: 'Development' })

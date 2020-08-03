@@ -4,16 +4,16 @@
   "files.insertFinalNewline": true,
   "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
-  "search.exclude": {
-    "**/package-lock.json": true
-  },
   "files.exclude": {
     "CNAME": true,
+    "LICENSE": true,
+    ".github/": true,
     "**/*.css": true,
     "**/*.html": true,
     "**/.DS_Store": true,
     "**/.directory": true,
     "**/desktop.ini": true,
-    "**/node_modules/": true
+    "**/node_modules/": true,
+    "**/package-lock.json": true
   }
 }

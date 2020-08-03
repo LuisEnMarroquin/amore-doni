@@ -39,11 +39,17 @@ git commit -m "Nuevo commit"
 git push
 ```
 
-Solve **vim** issue
+Solve issues with **vim**
 
 ```shell
 :qa!
 ```
+
+Solve issues with **nano**
+
+* Ctrl + O
+* Enter
+* Ctrl + X
 
 ## Linter
 

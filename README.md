@@ -29,6 +29,22 @@ Run the project
 npm start
 ```
 
+## Upload your changes
+
+Run the following commands
+
+```shell
+git add .
+git commit -m "Nuevo commit"
+git push
+```
+
+Solve **vim** issue
+
+```shell
+:qa!
+```
+
 ## Linter
 
 We use `standard.js` with all default values

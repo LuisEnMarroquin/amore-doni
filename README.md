@@ -12,13 +12,13 @@ A simple website using Bootstrap 5
 Install global dependencies
 
 ```shell
-npm install -g yarn nodemon standard
+npm install -g nodemon standard
 ```
 
 Install project dependencies
 
 ```shell
-yarn install
+npm install
 ```
 
 ## Execute
@@ -26,7 +26,7 @@ yarn install
 Run the project
 
 ```
-yarn start
+npm start
 ```
 
 ## Linter

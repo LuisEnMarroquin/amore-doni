@@ -15,8 +15,9 @@ yarn-error.log*
 lerna-debug.log*
 
 # Other lockfiles
-package-lock.json
+yarn.lock
 npm-shrinkwrap.json
 
-# This is a pug project
+# Compiled files
+*.css
 *.html

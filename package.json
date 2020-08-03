@@ -6,13 +6,20 @@
   "author": "LuisEnMarroquin <luis@marroquin.dev>",
   "license": "CC-BY-NC-4.0",
   "scripts": {
-    "start": "nodemon --watch views/ --watch public/ server.js"
+    "start": "nodemon server.js",
+    "stylus": "stylus --compress styles -o public"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "stylus": "^0.54.8"
   },
   "nodemonConfig": {
-    "ext": "pug,css,js"
+    "ext": "pug, styl, jpg, png, svg, ttf",
+    "watch": [
+      "public",
+      "styles",
+      "views"
+    ]
   }
 }

@@ -5,10 +5,12 @@
   "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
   "search.exclude": {
-    "**/yarn.lock": true
+    "**/package-lock.json": true
   },
   "files.exclude": {
     "CNAME": true,
+    "**/*.css": true,
+    "**/*.html": true,
     "**/.DS_Store": true,
     "**/.directory": true,
     "**/desktop.ini": true,

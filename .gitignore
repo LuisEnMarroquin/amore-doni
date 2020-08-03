@@ -21,3 +21,6 @@ npm-shrinkwrap.json
 # Compiled files
 *.css
 *.html
+
+# Test files
+nothing.*

@@ -7,7 +7,6 @@
   "files.exclude": {
     "CNAME": true,
     "LICENSE": true,
-    ".github/": true,
     "**/*.css": true,
     "**/*.html": true,
     "**/.DS_Store": true,

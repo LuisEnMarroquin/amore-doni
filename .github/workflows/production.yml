@@ -1,0 +1,20 @@
+name: Deploy production
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm ci
+    - run: cp CNAME public/CNAME
+    - run: node compile.js
+    - uses: JamesIves/github-pages-deploy-action@3.5.7
+      with:
+        GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO }}
+        BRANCH: gh-pages
+        FOLDER: public
